@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Smartwatch Tick W2 (ilustração)">
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10141c"/>
+      <stop offset="1" stop-color="#1c2433"/>
+    </linearGradient>
+    <radialGradient id="brilho" cx="50%" cy="52%" r="55%">
+      <stop offset="0" stop-color="#ff4d8d" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#ff4d8d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tela" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4d8d"/>
+      <stop offset="1" stop-color="#6c4dff"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#37405a"/>
+      <stop offset="1" stop-color="#232a3a"/>
+    </linearGradient>
+    <pattern id="grade" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#fundo)"/>
+  <rect width="400" height="300" fill="url(#grade)"/>
+  <rect width="400" height="300" fill="url(#brilho)"/>
+  <ellipse cx="200" cy="262" rx="128" ry="9" fill="#000000" opacity="0.38"/>
+  <rect x="168" y="22" width="64" height="86" rx="14" fill="#2a3243" stroke="#3d4863" stroke-width="2"/>
+  <rect x="168" y="192" width="64" height="86" rx="14" fill="#2a3243" stroke="#3d4863" stroke-width="2"/>
+  <rect x="136" y="98" width="128" height="104" rx="30" fill="#0a0d13" stroke="#3d4863" stroke-width="3"/>
+  <rect x="146" y="108" width="108" height="84" rx="22" fill="#10141c"/>
+  <circle cx="200" cy="150" r="30" fill="none" stroke="#ff4d8d" stroke-width="7" stroke-dasharray="130 60" stroke-linecap="round"/>
+  <circle cx="200" cy="150" r="19" fill="none" stroke="#6c4dff" stroke-width="6" stroke-dasharray="80 40" stroke-linecap="round"/>
+  <circle cx="200" cy="150" r="9" fill="none" stroke="#1fcf8f" stroke-width="5" stroke-dasharray="36 20" stroke-linecap="round"/>
+  <rect x="264" y="128" width="9" height="22" rx="3" fill="#3d4863"/>
+</svg>

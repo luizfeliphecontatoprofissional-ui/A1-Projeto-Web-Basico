@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logotipo ByteNova">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00c2ff"/>
+      <stop offset="1" stop-color="#6c4dff"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 3 L57 17.5 V46.5 L32 61 L7 46.5 V17.5Z" fill="url(#g)"/>
+  <path d="M22 44 V20 L42 44 V20" fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
