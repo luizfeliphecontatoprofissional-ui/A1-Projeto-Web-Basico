@@ -1,0 +1,57 @@
+/*
+  Arquivo: js/produtos.js
+  Projeto: ByteNova - Portal de Tecnologia
+  Autores: Fellipe Augusto e Luiz Feliphe
+  Finalidade: lista dos 16 produtos.
+*/
+
+const produtos = [
+    { id: 1, nome: "NovaBook 14 Air", categoria: "computadores", perfil: "estudos", destaque: true,
+      preco: 2899, precoAntigo: 0, oferta: false, imagem: "img/novabook-14-air.svg",
+      resumo: "Notebook leve para estudar e trabalhar em qualquer lugar.", spec: "14 pol., 8 GB de RAM, SSD de 256 GB" },
+    { id: 2, nome: "NovaBook 15 Pro", categoria: "computadores", perfil: "trabalho", destaque: true,
+      preco: 4599, precoAntigo: 5199, oferta: true, imagem: "img/novabook-15-pro.svg",
+      resumo: "Desempenho para planilhas, edição de imagens e muitas abas.", spec: "15,6 pol., 16 GB de RAM, SSD de 512 GB" },
+    { id: 3, nome: "ByteBook Gamer X", categoria: "computadores", perfil: "jogos", destaque: true,
+      preco: 7499, precoAntigo: 0, oferta: false, imagem: "img/bytebook-gamer-x.svg",
+      resumo: "Placa de vídeo dedicada para jogar com boa fluidez.", spec: "16 pol. 144 Hz, 16 GB de RAM, SSD de 1 TB" },
+    { id: 4, nome: "Torre Gamer Nova", categoria: "computadores", perfil: "jogos", destaque: false,
+      preco: 8999, precoAntigo: 9799, oferta: true, imagem: "img/torre-gamer-nova.svg",
+      resumo: "PC montado para jogos atuais em alta qualidade gráfica.", spec: "32 GB de RAM, SSD de 1 TB, vídeo de 12 GB" },
+    { id: 5, nome: "Teclado Pulse K75", categoria: "perifericos", perfil: "jogos", destaque: true,
+      preco: 399, precoAntigo: 0, oferta: false, imagem: "img/teclado-pulse-k75.svg",
+      resumo: "Teclado compacto com resposta rápida e iluminação RGB.", spec: "Formato 75%, switches lineares, RGB" },
+    { id: 6, nome: "Mouse Orbit M3", categoria: "perifericos", perfil: "jogos", destaque: true,
+      preco: 289, precoAntigo: 349, oferta: true, imagem: "img/mouse-orbit-m3.svg",
+      resumo: "Mouse leve e preciso para jogos e uso diário.", spec: "26.000 DPI, 62 g, sem fio" },
+    { id: 7, nome: "Headset Echo H7", categoria: "perifericos", perfil: "jogos", destaque: false,
+      preco: 459, precoAntigo: 0, oferta: false, imagem: "img/headset-echo-h7.svg",
+      resumo: "Som envolvente e microfone removível para jogar e conversar.", spec: "Som 7.1 virtual, microfone removível, USB" },
+    { id: 8, nome: "Microfone Voxa USB", categoria: "perifericos", perfil: "casa", destaque: false,
+      preco: 349, precoAntigo: 0, oferta: false, imagem: "img/microfone-voxa-usb.svg",
+      resumo: "Voz clara em reuniões, aulas online e transmissões.", spec: "Condensador cardioide, USB, botão de mudo" },
+    { id: 9, nome: "Processador Quark 6C", categoria: "componentes", perfil: "trabalho", destaque: false,
+      preco: 1149, precoAntigo: 0, oferta: false, imagem: "img/processador-quark-6c.svg",
+      resumo: "Processador equilibrado para uso geral e jogos.", spec: "6 núcleos, 3,6 GHz, cache de 32 MB" },
+    { id: 10, nome: "Placa de Vídeo Photon 12G", categoria: "componentes", perfil: "jogos", destaque: true,
+      preco: 3399, precoAntigo: 3799, oferta: true, imagem: "img/placa-de-video-photon-12g.svg",
+      resumo: "Placa para jogar em alta resolução com boa qualidade.", spec: "12 GB GDDR6, duas ventoinhas, 200 W" },
+    { id: 11, nome: "Memória RAM Flux 16 GB", categoria: "componentes", perfil: "trabalho", destaque: false,
+      preco: 279, precoAntigo: 0, oferta: false, imagem: "img/memoria-ram-flux-16gb.svg",
+      resumo: "Kit de memória para deixar o computador mais ágil.", spec: "Kit 2 x 8 GB, DDR4 de 3200 MHz" },
+    { id: 12, nome: "SSD Rapid 1 TB NVMe", categoria: "componentes", perfil: "estudos", destaque: true,
+      preco: 459, precoAntigo: 0, oferta: false, imagem: "img/ssd-rapid-1tb-nvme.svg",
+      resumo: "Armazenamento veloz para sistema, programas e arquivos.", spec: "1 TB, M.2 NVMe, leitura de 3.500 MB/s" },
+    { id: 13, nome: "Smartphone Nova S5", categoria: "celulares", perfil: "estudos", destaque: false,
+      preco: 1299, precoAntigo: 0, oferta: false, imagem: "img/smartphone-nova-s5.svg",
+      resumo: "Celular de entrada com bateria que dura o dia todo.", spec: "Tela de 6,5 pol., 128 GB, bateria de 5.000 mAh" },
+    { id: 14, nome: "Smartphone Nova S9 Pro", categoria: "celulares", perfil: "trabalho", destaque: true,
+      preco: 3999, precoAntigo: 4499, oferta: true, imagem: "img/smartphone-nova-s9-pro.svg",
+      resumo: "Celular avançado com tela fluida e ótimas câmeras.", spec: "AMOLED de 6,7 pol., 256 GB, câmera de 108 MP" },
+    { id: 15, nome: "Tablet Slate 10", categoria: "celulares", perfil: "estudos", destaque: true,
+      preco: 1599, precoAntigo: 0, oferta: false, imagem: "img/tablet-slate-10.svg",
+      resumo: "Tablet para leitura, vídeos e aulas online.", spec: "Tela de 10,4 pol., 64 GB, bateria de 7.000 mAh" },
+    { id: 16, nome: "Smartwatch Tick W2", categoria: "celulares", perfil: "casa", destaque: false,
+      preco: 799, precoAntigo: 0, oferta: false, imagem: "img/smartwatch-tick-w2.svg",
+      resumo: "Relógio que acompanha atividades físicas e notificações.", spec: "AMOLED de 1,5 pol., GPS, bateria de 7 dias" }
+];
