@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--
+  Arquivo: comparador.html
+  Projeto: ByteNova - Portal de Tecnologia
+  Autores: Fellipe Augusto e Luiz Feliphe
+  Finalidade: comparador de produtos (sem Bootstrap).
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comparador | ByteNova</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu container">
+            <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34"><span>ByteNova</span></a>
+            <button class="menu-botao" id="botao-menu" type="button">Menu</button>
+            <ul id="lista-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="computadores.html">Computadores</a></li>
+                <li><a href="perifericos.html">Periféricos</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="celulares.html">Celulares</a></li>
+                <li><a class="ativo" href="comparador.html">Comparador</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener">MDN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="faixa">
+        <div class="container">
+            <h1>Comparador de produtos</h1>
+            <p>Marque produtos e veja a soma, a média e o mais barato.</p>
+        </div>
+    </section>
+    <section class="secao">
+        <div class="container">
+            <h2>Tabela de comparação</h2>
+            <p id="resumo" role="status"></p>
+            <div class="tabela-caixa">
+                <table id="tabela">
+                    <caption>Comparação de produtos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Comparar</th>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Especificação principal</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Indicação de uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr id="produto-1">
+                        <td><input type="checkbox" data-preco="2899" data-nome="NovaBook 14 Air" aria-label="Comparar NovaBook 14 Air"></td>
+                        <th scope="row">NovaBook 14 Air</th>
+                        <td>Computadores</td>
+                        <td>14 pol., 8 GB de RAM, SSD de 256 GB</td>
+                        <td>R$ 2.899,00</td>
+                        <td>Estudos</td>
+                    </tr>
+                    <tr id="produto-2">
+                        <td><input type="checkbox" data-preco="4599" data-nome="NovaBook 15 Pro" aria-label="Comparar NovaBook 15 Pro"></td>
+                        <th scope="row">NovaBook 15 Pro</th>
+                        <td>Computadores</td>
+                        <td>15,6 pol., 16 GB de RAM, SSD de 512 GB</td>
+                        <td>R$ 4.599,00</td>
+                        <td>Trabalho</td>
+                    </tr>
+                    <tr id="produto-3">
+                        <td><input type="checkbox" data-preco="7499" data-nome="ByteBook Gamer X" aria-label="Comparar ByteBook Gamer X"></td>
+                        <th scope="row">ByteBook Gamer X</th>
+                        <td>Computadores</td>
+                        <td>16 pol. 144 Hz, 16 GB de RAM, SSD de 1 TB</td>
+                        <td>R$ 7.499,00</td>
+                        <td>Jogos</td>
+                    </tr>
+                    <tr id="produto-4">
+                        <td><input type="checkbox" data-preco="8999" data-nome="Torre Gamer Nova" aria-label="Comparar Torre Gamer Nova"></td>
+                        <th scope="row">Torre Gamer Nova</th>
+                        <td>Computadores</td>
+                        <td>32 GB de RAM, SSD de 1 TB, vídeo de 12 GB</td>
+                        <td>R$ 8.999,00</td>
+                        <td>Jogos</td>
+                    </tr>
+                    <tr id="produto-5">
+                        <td><input type="checkbox" data-preco="399" data-nome="Teclado Pulse K75" aria-label="Comparar Teclado Pulse K75"></td>
+                        <th scope="row">Teclado Pulse K75</th>
+                        <td>Periféricos</td>
+                        <td>Formato 75%, switches lineares, RGB</td>
+                        <td>R$ 399,00</td>
+                        <td>Jogos</td>
+                    </tr>
+                    <tr id="produto-6">
+                        <td><input type="checkbox" data-preco="289" data-nome="Mouse Orbit M3" aria-label="Comparar Mouse Orbit M3"></td>
+                        <th scope="row">Mouse Orbit M3</th>
+                        <td>Periféricos</td>
+                        <td>26.000 DPI, 62 g, sem fio</td>
+                        <td>R$ 289,00</td>
+                        <td>Jogos</td>
+                    </tr>
+                    <tr id="produto-7">
+                        <td><input type="checkbox" data-preco="459" data-nome="Headset Echo H7" aria-label="Comparar Headset Echo H7"></td>
+                        <th scope="row">Headset Echo H7</th>
+                        <td>Periféricos</td>
+                        <td>Som 7.1 virtual, microfone removível, USB</td>
+                        <td>R$ 459,00</td>
+                        <td>Jogos</td>
+                    </tr>
+                    <tr id="produto-8">
+                        <td><input type="checkbox" data-preco="349" data-nome="Microfone Voxa USB" aria-label="Comparar Microfone Voxa USB"></td>
+                        <th scope="row">Microfone Voxa USB</th>
+                        <td>Periféricos</td>
+                        <td>Condensador cardioide, USB, botão de mudo</td>
+                        <td>R$ 349,00</td>
+                        <td>Casa</td>
+                    </tr>
+                    <tr id="produto-9">
+                        <td><input type="checkbox" data-preco="1149" data-nome="Processador Quark 6C" aria-label="Comparar Processador Quark 6C"></td>
+                        <th scope="row">Processador Quark 6C</th>
+                        <td>Componentes</td>
+                        <td>6 núcleos, 3,6 GHz, cache de 32 MB</td>
+                        <td>R$ 1.149,00</td>
+                        <td>Trabalho</td>
+                    </tr>
+                    <tr id="produto-10">
+                        <td><input type="checkbox" data-preco="3399" data-nome="Placa de Vídeo Photon 12G" aria-label="Comparar Placa de Vídeo Photon 12G"></td>
+                        <th scope="row">Placa de Vídeo Photon 12G</th>
+                        <td>Componentes</td>
+                        <td>12 GB GDDR6, duas ventoinhas, 200 W</td>
+                        <td>R$ 3.399,00</td>
+                        <td>Jogos</td>
+                    </tr>
+                    <tr id="produto-11">
+                        <td><input type="checkbox" data-preco="279" data-nome="Memória RAM Flux 16 GB" aria-label="Comparar Memória RAM Flux 16 GB"></td>
+                        <th scope="row">Memória RAM Flux 16 GB</th>
+                        <td>Componentes</td>
+                        <td>Kit 2 x 8 GB, DDR4 de 3200 MHz</td>
+                        <td>R$ 279,00</td>
+                        <td>Trabalho</td>
+                    </tr>
+                    <tr id="produto-12">
+                        <td><input type="checkbox" data-preco="459" data-nome="SSD Rapid 1 TB NVMe" aria-label="Comparar SSD Rapid 1 TB NVMe"></td>
+                        <th scope="row">SSD Rapid 1 TB NVMe</th>
+                        <td>Componentes</td>
+                        <td>1 TB, M.2 NVMe, leitura de 3.500 MB/s</td>
+                        <td>R$ 459,00</td>
+                        <td>Estudos</td>
+                    </tr>
+                    <tr id="produto-13">
+                        <td><input type="checkbox" data-preco="1299" data-nome="Smartphone Nova S5" aria-label="Comparar Smartphone Nova S5"></td>
+                        <th scope="row">Smartphone Nova S5</th>
+                        <td>Celulares</td>
+                        <td>Tela de 6,5 pol., 128 GB, bateria de 5.000 mAh</td>
+                        <td>R$ 1.299,00</td>
+                        <td>Estudos</td>
+                    </tr>
+                    <tr id="produto-14">
+                        <td><input type="checkbox" data-preco="3999" data-nome="Smartphone Nova S9 Pro" aria-label="Comparar Smartphone Nova S9 Pro"></td>
+                        <th scope="row">Smartphone Nova S9 Pro</th>
+                        <td>Celulares</td>
+                        <td>AMOLED de 6,7 pol., 256 GB, câmera de 108 MP</td>
+                        <td>R$ 3.999,00</td>
+                        <td>Trabalho</td>
+                    </tr>
+                    <tr id="produto-15">
+                        <td><input type="checkbox" data-preco="1599" data-nome="Tablet Slate 10" aria-label="Comparar Tablet Slate 10"></td>
+                        <th scope="row">Tablet Slate 10</th>
+                        <td>Celulares</td>
+                        <td>Tela de 10,4 pol., 64 GB, bateria de 7.000 mAh</td>
+                        <td>R$ 1.599,00</td>
+                        <td>Estudos</td>
+                    </tr>
+                    <tr id="produto-16">
+                        <td><input type="checkbox" data-preco="799" data-nome="Smartwatch Tick W2" aria-label="Comparar Smartwatch Tick W2"></td>
+                        <th scope="row">Smartwatch Tick W2</th>
+                        <td>Celulares</td>
+                        <td>AMOLED de 1,5 pol., GPS, bateria de 7 dias</td>
+                        <td>R$ 799,00</td>
+                        <td>Casa</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer id="rodape">
+        <div class="container">
+            <p>&copy; 2026 ByteNova</p>
+            <p>
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener">MDN</a> |
+                <a href="https://getbootstrap.com/docs/5.3/" target="_blank" rel="noopener">Bootstrap</a> |
+                <a href="https://git-scm.com/doc" target="_blank" rel="noopener">Git</a> |
+                <a href="https://docs.github.com/pt" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/comparador.js"></script>
+</body>
+</html>

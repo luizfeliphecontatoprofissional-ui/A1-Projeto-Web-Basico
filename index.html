@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+  Arquivo: index.html
+  Projeto: ByteNova - Portal de Tecnologia
+  Autores: Fellipe Augusto e Luiz Feliphe
+  Finalidade: página inicial.
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Início | ByteNova</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #banner .btn {
+            margin: 8px 8px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <div class="container">
+                <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34"><span>ByteNova</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="computadores.html">Computadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="perifericos.html">Periféricos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="componentes.html">Componentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="celulares.html">Celulares</a></li>
+                    <li class="nav-item"><a class="nav-link" href="comparador.html">Comparador</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener">MDN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section id="banner" class="faixa">
+        <div class="container">
+            <h1>Tecnologia explicada, <span class="destaque">produtos comparados</span></h1>
+            <p style="max-width: 60ch;">Compare computadores, periféricos, componentes e celulares em um só lugar.</p>
+            <a class="btn btn-info" href="computadores.html">Explorar produtos</a>
+            <a class="btn btn-outline-light" href="comparador.html">Comparar produtos</a>
+        </div>
+    </section>
+
+    <section class="secao">
+        <div class="container">
+            <h2>Categorias</h2>
+            <div class="grade">
+            <a class="cartao" href="computadores.html">
+                <img src="img/novabook-14-air.svg" alt="Computadores e notebooks">
+                <div class="cartao-corpo">
+                    <h3>Computadores e notebooks</h3>
+                    <p>Para estudar, trabalhar e jogar.</p>
+                </div>
+            </a>
+            <a class="cartao" href="perifericos.html">
+                <img src="img/teclado-pulse-k75.svg" alt="Periféricos">
+                <div class="cartao-corpo">
+                    <h3>Periféricos</h3>
+                    <p>Teclados, mouses, headsets e microfones.</p>
+                </div>
+            </a>
+            <a class="cartao" href="componentes.html">
+                <img src="img/processador-quark-6c.svg" alt="Componentes de PC">
+                <div class="cartao-corpo">
+                    <h3>Componentes de PC</h3>
+                    <p>Processadores, vídeo, memória e SSDs.</p>
+                </div>
+            </a>
+            <a class="cartao" href="celulares.html">
+                <img src="img/smartphone-nova-s9-pro.svg" alt="Celulares e dispositivos">
+                <div class="cartao-corpo">
+                    <h3>Celulares e dispositivos</h3>
+                    <p>Smartphones, tablets e relógios.</p>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao">
+        <div class="container">
+            <h2>Produtos em destaque</h2>
+            <div class="grade" id="destaques"></div>
+        </div>
+    </section>
+
+    <section class="secao">
+        <div class="container">
+            <h2>Ofertas</h2>
+            <div class="grade" id="ofertas-home"></div>
+            <p><a class="btn btn-info" href="ofertas.html">Ver todas as ofertas</a></p>
+        </div>
+    </section>
+
+    <section class="secao">
+        <div class="container">
+            <h2>Vídeo e áudio</h2>
+            <div class="duas-colunas">
+                <video controls preload="metadata" poster="img/video-poster.jpg">
+                    <source src="video/apresentacao-bytenova.webm" type="video/webm">
+                    <source src="video/apresentacao-bytenova.mp4" type="video/mp4">
+                    Seu navegador não reproduz vídeo.
+                </video>
+                <div>
+                    <h3>Vinheta do portal</h3>
+                    <audio controls preload="metadata">
+                        <source src="audio/vinheta-bytenova.mp3" type="audio/mpeg">
+                        Seu navegador não reproduz áudio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer id="rodape">
+        <div class="container">
+            <p>&copy; 2026 ByteNova</p>
+            <p>
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener">MDN</a> |
+                <a href="https://getbootstrap.com/docs/5.3/" target="_blank" rel="noopener">Bootstrap</a> |
+                <a href="https://git-scm.com/doc" target="_blank" rel="noopener">Git</a> |
+                <a href="https://docs.github.com/pt" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

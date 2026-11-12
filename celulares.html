@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+  Arquivo: celulares.html
+  Projeto: ByteNova - Portal de Tecnologia
+  Autores: Fellipe Augusto e Luiz Feliphe
+  Finalidade: catálogo de celulares e dispositivos.
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Celulares e dispositivos | ByteNova</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <div class="container">
+                <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34"><span>ByteNova</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="computadores.html">Computadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="perifericos.html">Periféricos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="componentes.html">Componentes</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="celulares.html">Celulares</a></li>
+                    <li class="nav-item"><a class="nav-link" href="comparador.html">Comparador</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener">MDN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section class="faixa">
+        <div class="container">
+            <h1>Celulares e dispositivos</h1>
+            <p>Smartphones, tablets e relógios inteligentes.</p>
+        </div>
+    </section>
+    <section class="secao">
+        <div class="container">
+            <h2>Produtos</h2>
+            <div class="filtros">
+                <label for="perfil">Perfil de uso</label>
+                <select class="form-select" id="perfil">
+                    <option value="todos">Todos os perfis</option>
+                    <option value="estudos">Estudos</option>
+                    <option value="trabalho">Trabalho</option>
+                    <option value="jogos">Jogos</option>
+                    <option value="casa">Casa</option>
+                </select>
+            </div>
+            <p id="mensagem" role="status"></p>
+            <div class="grade" id="lista-produtos" data-categoria="celulares"></div>
+        </div>
+    </section>
+    </main>
+    <footer id="rodape">
+        <div class="container">
+            <p>&copy; 2026 ByteNova</p>
+            <p>
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener">MDN</a> |
+                <a href="https://getbootstrap.com/docs/5.3/" target="_blank" rel="noopener">Bootstrap</a> |
+                <a href="https://git-scm.com/doc" target="_blank" rel="noopener">Git</a> |
+                <a href="https://docs.github.com/pt" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

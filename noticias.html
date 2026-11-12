@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+  Arquivo: noticias.html
+  Projeto: ByteNova - Portal de Tecnologia
+  Autores: Fellipe Augusto e Luiz Feliphe
+  Finalidade: notícias e artigos.
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notícias | ByteNova</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <div class="container">
+                <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34"><span>ByteNova</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="computadores.html">Computadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="perifericos.html">Periféricos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="componentes.html">Componentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="celulares.html">Celulares</a></li>
+                    <li class="nav-item"><a class="nav-link" href="comparador.html">Comparador</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="noticias.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener">MDN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section class="faixa">
+        <div class="container">
+            <h1>Notícias e novidades</h1>
+            <p>Artigos curtos para entender o que há dentro do computador.</p>
+        </div>
+    </section>
+    <section class="secao">
+        <div class="container">
+            <div class="alert alert-info" role="alert">
+                Os links abrem sites externos em outra aba.
+            </div>
+            <h2>Artigos para aprender</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <article class="card h-100">
+                    <img class="card-img-top" src="img/ssd-rapid-1tb-nvme.svg" alt="SSD: o que é e por que acelera o computador">
+                    <div class="card-body">
+                        <h3 class="card-title h5">SSD: o que é e por que acelera o computador</h3>
+                        <p class="card-text">O SSD guarda os dados em chips, sem partes móveis. Por isso liga o sistema e abre programas bem mais rápido que um HD.</p>
+                        <a class="btn btn-sm btn-info" href="https://pt.wikipedia.org/wiki/Unidade_de_estado_s%C3%B3lido" target="_blank" rel="noopener">Ler sobre SSD</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100">
+                    <img class="card-img-top" src="img/memoria-ram-flux-16gb.svg" alt="Memória RAM: quanto é suficiente?">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Memória RAM: quanto é suficiente?</h3>
+                        <p class="card-text">A RAM guarda o que está em uso no momento. Quem abre muitas abas e programas ao mesmo tempo se beneficia de mais memória.</p>
+                        <a class="btn btn-sm btn-info" href="https://pt.wikipedia.org/wiki/Mem%C3%B3ria_de_acesso_aleat%C3%B3rio" target="_blank" rel="noopener">Ler sobre RAM</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100">
+                    <img class="card-img-top" src="img/processador-quark-6c.svg" alt="Processador: núcleos e frequência">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Processador: núcleos e frequência</h3>
+                        <p class="card-text">Núcleos permitem fazer várias tarefas juntas; a frequência indica a velocidade de cada uma. As duas contam na hora de comparar.</p>
+                        <a class="btn btn-sm btn-info" href="https://pt.wikipedia.org/wiki/Unidade_central_de_processamento" target="_blank" rel="noopener">Ler sobre processadores</a>
+                    </div>
+                </article>
+            </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer id="rodape">
+        <div class="container">
+            <p>&copy; 2026 ByteNova</p>
+            <p>
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener">MDN</a> |
+                <a href="https://getbootstrap.com/docs/5.3/" target="_blank" rel="noopener">Bootstrap</a> |
+                <a href="https://git-scm.com/doc" target="_blank" rel="noopener">Git</a> |
+                <a href="https://docs.github.com/pt" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+  Arquivo: contato.html
+  Projeto: ByteNova - Portal de Tecnologia
+  Autores: Fellipe Augusto e Luiz Feliphe
+  Finalidade: sobre o projeto e formulário de contato.
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato | ByteNova</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <div class="container">
+                <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34"><span>ByteNova</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="computadores.html">Computadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="perifericos.html">Periféricos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="componentes.html">Componentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="celulares.html">Celulares</a></li>
+                    <li class="nav-item"><a class="nav-link" href="comparador.html">Comparador</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener">MDN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section class="faixa">
+        <div class="container">
+            <h1>Sobre e contato</h1>
+            <p>Conheça o portal e fale com a equipe.</p>
+        </div>
+    </section>
+    <section class="secao">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <h2>Sobre o ByteNova</h2>
+                    <p>O ByteNova é um portal de tecnologia. Reúne computadores, periféricos, componentes e celulares, com comparador e lista de favoritos.</p>
+                    <p>Use o formulário ao lado para tirar dúvidas, sugerir conteúdo ou avisar sobre algum erro no site.</p>
+                </div>
+                <div class="col-lg-7">
+                    <h2>Fale com a equipe</h2>
+                    <form id="formulario">
+                        <div class="mb-3">
+                            <label class="form-label" for="nome">Nome</label>
+                            <input class="form-control" type="text" id="nome" required minlength="3" maxlength="60" pattern="[A-Za-zÀ-ÿ ]{3,60}" title="Use apenas letras e espaços, com no mínimo 3 letras." placeholder="Seu nome completo">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">E-mail</label>
+                            <input class="form-control" type="email" id="email" required placeholder="voce@exemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="assunto">Assunto</label>
+                            <select class="form-select" id="assunto" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="duvida">Dúvida sobre produtos</option>
+                                <option value="sugestao">Sugestão de conteúdo</option>
+                                <option value="erro">Aviso de erro no site</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" required minlength="10" maxlength="500" placeholder="Escreva sua mensagem (mínimo de 10 caracteres)"></textarea>
+                        </div>
+                        <button class="btn btn-info" type="submit">Enviar mensagem</button>
+                    </form>
+                    <div id="alerta" role="alert"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer id="rodape">
+        <div class="container">
+            <p>&copy; 2026 ByteNova</p>
+            <p>
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener">MDN</a> |
+                <a href="https://getbootstrap.com/docs/5.3/" target="_blank" rel="noopener">Bootstrap</a> |
+                <a href="https://git-scm.com/doc" target="_blank" rel="noopener">Git</a> |
+                <a href="https://docs.github.com/pt" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+</html>
